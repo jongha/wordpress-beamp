@@ -1,6 +1,6 @@
 <?php
 /**
- * The beamp theme functions file.
+ * The Walker Nav Menu 
  *
  * @version 1.0
  * @package Beamp
