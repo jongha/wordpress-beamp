@@ -18,9 +18,10 @@ if( !function_exists( 'beamp_setup' ) ):
         add_filter( 'show_admin_bar', '__return_false' );
         add_filter( 'get_search_form', 'search_form' );
         
-        register_nav_menu( 'primary', __( 'Navigation Menu', 'twentythirteen' ) );
+        register_nav_menu( 'primary', __( 'Navigation Menu', 'beamp' ) );
 
     }
+    
 endif;
 add_action( 'after_setup_theme', 'beamp_setup' );
 ?>
