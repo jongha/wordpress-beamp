@@ -12,8 +12,12 @@
 if( !function_exists( 'beamp_setup' ) ):
     function beamp_setup() {
 
+        @require_once( get_template_directory() . '/inc/walker_nav_menu.php' );
+        @require_once( get_template_directory() . '/inc/search_form.php' );
+        
         add_filter( 'show_admin_bar', '__return_false' );
-        require_once( get_template_directory() . '/inc/beamp_walker_nav_menu.php' );
+        add_filter( 'get_search_form', 'search_form' );
+        
         register_nav_menu( 'primary', __( 'Navigation Menu', 'twentythirteen' ) );
 
     }

@@ -49,13 +49,16 @@
                 wp_nav_menu(
 				    array(
 				        'container'		 => 'div',
-				        'container_class'   => 'navbar-collapse collapse',
+				        'container_class'   => 'navbar-collapse collapse navbar-left',
 				        'menu_class'		=> 'nav navbar-nav',
 				        'items_wrap'		=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
 				        'walker'			=> new beamp_walker_nav_menu
 				    )
 			    );
 			?>
+
+			<!-- search form -->
+			<div class="navbar-right"><?php get_search_form(); ?></div>
 		</div>
 	</div>
 	<div id="main" class="container">
